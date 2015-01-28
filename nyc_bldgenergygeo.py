@@ -75,7 +75,7 @@ bldgs.head()
 
 # Note the problem here though. These first few buildings in the dataset are located on Governor's Island (just south of the island of Manhattan), and we know that the longitude and latitude of the center of the island is 40.6914° N, 74.0161° W (ref: [google search](https://www.google.com/search?q=nyc+lat+long&ie=utf-8&oe=utf-8#q=nyc+governor%27s+island+lat+long)), but our conversion notes them as approximately 48.1° N, 112.7° W. Further investigation of the graphs (below) suggests that the result is also rotated. Something is incorrect about this conversion - if I figure out what, I will post a revision to this document. But for the immediate purposes of data visualization we can use the conversion as it stands, since the resulting maps look to be generally correct, just translated and rotated (or possibly scaled improperly).
 
-# In[27]:
+# In[6]:
 
 # notes for further investigation of the conversion issue: 
 #  GeoPandas uses pyproj; the code below provides an initial suggestion that something might be amiss with the units handling
