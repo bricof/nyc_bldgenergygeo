@@ -51,7 +51,7 @@ print 'crs:\t\t' + str(bldgs.crs) # projection info for the geometry data
 
 # There are 1,082,381 buildings in this dataset. Note that the geometry values are in feet, using the EPSG 2263 projection (as specified in the source metadata file).
 # 
-# For clarity, we revise the table to only include the columns we are interested in. Note that 'BBL' stands for 'Burough - Block - Lot number'. This column is shared with the energy data described below, and will be used as a key for merging the tables, so we make it an index here. For convenience we add a new column 'boro' (keeping with traditional NY spelling) which contains the burough as a single-character string: '1'=Manhattan, '2'=Bronx, etc.
+# For clarity, we revise the table to only include the columns we are interested in. Note that 'BBL' stands for 'Borough - Block - Lot number'. This column is shared with the energy data described below, and will be used as a key for merging the tables, so we make it an index here. For convenience we add a new column 'boro' (keeping with traditional NY spelling) which contains the borough as a single-character string: '1'=Manhattan, '2'=Bronx, etc.
 
 # In[4]:
 
